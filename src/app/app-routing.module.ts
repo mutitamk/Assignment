@@ -7,6 +7,7 @@ import { FaqComponent } from './faq/faq.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'aboutus', component: AboutusComponent },
   { path: 'editdata', component: EditdataComponent },
